@@ -1,0 +1,222 @@
+:root{
+    --branco: #FFFFFF;
+    --cinza: #C0C0C0;
+    --botao: #0e2c40;
+    --background: #00030C; 
+    --fonte-principal: 'Inter';
+    --botao-efeito: #148D8D;
+    --efeito-secundario: #00bfff;
+    --lingua: #EC2F46;
+    --combo: #ffd700;
+    --destaque: #FF0000;
+    --sombra: #698daa;
+    --dispositivos: #A93CFF;
+    --efeito-letra: #666565;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.containerbotao{
+    background-color: var(--botao);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco);
+    box-shadow: 4px 4px var(--sombra);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botaosecundario{
+    background-color: transparent;
+    border: 2px solid var(--branco);
+}
+
+.container_aviso{
+    font-size: 12px;
+    color: var(--cinza);
+
+}
+
+.container_titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.containerimg{
+    margin: 1em 0 2em 0;
+}
+
+.container_caixa{
+    margin: 0 6em;
+
+}
+
+.secundario_img{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao_titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco);
+    margin-bottom: 0.1em;
+}
+
+.descricao_texto{
+    color: var(--cinza);
+    font-size: 16px;
+}
+
+.secundario_botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container_descricao{
+    padding: 2em;
+}
+
+.notebook{
+    width: 90%;
+}
+
+.dispositivos_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+    
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos_titulo{
+    font-size: 48px;
+    color: var(--branco);
+}
+
+.lista-item{
+    font-size: 32px;
+    color: var(--branco);
+}
+
+.rodape_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista_link a{
+    text-decoration: none;
+    color: var(--branco);
+    margin-left: 1em;
+}
+
+.rodape_texto{
+    margin: 1em 0;
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape_logo{
+    margin-bottom: 2em;
+}
+
+.lista_link a:hover{
+    color: var(--dispositivos);
+}
+
+.lista_link a:active{
+    color: #fffb02;
+}
+
+.containerbotao:hover{
+    background-color: var(--botao-efeito);
+    color: var(--background);
+}
+
+.botaosecundario:hover{
+    background-color: var(--efeito-secundario);
+    color: var(--background);
+}
+
+.telas{
+    width:90%;
+}
+
+.lingua{
+    color: var(--lingua);
+}
+
+.combo{
+    color: var(--combo);
+}
+
+.destaque{
+    color: var(--destaque);
+}
+
+.bluezao{
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+.bluezao:hover{
+    color: var(--efeito-letra)
+}
+
+.led_img{
+    filter: drop-shadow(0 0 0.4em rgb(175, 123, 223));
+}
+
+.led_cll{
+    filter: drop-shadow(0 0 0.4em rgb(0, 17, 255));
+}
+
+
+.led_desktop{
+    filter: drop-shadow(0 0 0.4em rgb(255, 0, 0));
+}
+
+
+.led_tv{
+    filter: drop-shadow(0 0 0.4em rgb(0, 255, 221));
+}
